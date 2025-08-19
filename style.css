@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+main {
+    background-color: rgba(22, 35, 120, .4);
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+main h1 {
+    text-align:  center;
+    color: white;
+    margin-bottom: .8rem;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+form {
+    width: 90%;
+    margin-left: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%; 
+    font-size: 1rem;
+    padding: .2rem;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    border: none;
+    padding:.4rem;
+    background-color: black;
+    color:  white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 400px) {
+    main {
+        width: 55%;
+    }
+    main h1 {
+        font-size: 1.2rem;
+    }
+    form label {
+        font-size: .8rem;
+        border-bottom: .3rem;
+    }
+
+    input, textarea, button {
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 689px) {
+        main {
+            width: 60%;            
+        }
+    
+        main h1 {
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+        }
+
+        form label {
+            font-size: 1rem;
+            margin-bottom: .4rem;
+        }
+
+        input, textarea, button {
+            font-size: .9rem;
+        }
+}
+
